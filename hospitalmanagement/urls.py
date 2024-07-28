@@ -16,6 +16,10 @@ from hospital import views
 from django.contrib.auth.views import LoginView,LogoutView
 
 
+
+# from schema_graph.views import Schema
+
+
 #-------------FOR ADMIN RELATED URLS
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -109,6 +113,5 @@ urlpatterns +=[
 
 ]
 
-#Developed By : sumit kumar
-#facebook : fb.com/sumit.luv
-#Youtube :youtube.com/lazycoders
+
+

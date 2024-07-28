@@ -1,0 +1,62 @@
+// Users, Roles, and Groups
+Table User {
+  id int [pk, increment]
+  username varchar(255) [not null, unique]
+  password varchar(255) [not null]
+  first_name varchar(255)
+  last_name varchar(255)
+  email varchar(255) [not null, unique]
+}
+
+
+// Admin, Doctor, Patient
+Table Admin {
+  id int [pk, increment]
+  user_id int [ref: > User.id, unique]
+}
+
+Table Doctor {
+  id int [pk, increment]
+  user_id int [ref: > User.id, unique]
+  profile_picture varchar(255)
+  specialty varchar(255)
+  status boolean
+}
+
+Table Patient {
+  id int [pk, increment]
+  user_id int [ref: > User.id, unique]
+  profile_picture varchar(255)
+  mobile varchar(20)
+  address text
+  symptoms text
+  admit_date date
+  assigned_doctor_id int [ref: > Doctor.id]
+  status boolean
+}
+
+// Appointments and Discharge Details
+Table Appointment {
+  id int [pk, increment]
+  doctor_id int [ref: > Doctor.id]
+  patient_id int [ref: > Patient.id]
+  date datetime
+  status boolean
+}
+
+Table PatientDischargeDetails {
+  id int [pk, increment]
+  patient_id int [ref: > Patient.id]
+  assigned_doctor_id int [ref: > Doctor.id]
+  address text
+  mobile varchar(20)
+  symptoms text
+  admit_date date
+  release_date date
+  day_spent int
+  medicine_cost float
+  room_charge float
+  doctor_fee float
+  other_charge float
+  total float
+}
