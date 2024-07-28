@@ -8,6 +8,15 @@ from django.contrib.auth.decorators import login_required,user_passes_test
 from datetime import datetime,timedelta,date
 from django.conf import settings
 from django.db.models import Q
+from django.contrib.auth import logout
+
+
+# Logout view
+def logout_view(request):
+    logout(request)
+    return redirect('home_view')
+
+
 
 # Create your views here.
 def home_view(request):
