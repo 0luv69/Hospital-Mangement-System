@@ -117,7 +117,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-* Open your web browser and navigate to `http://127.0.0.1:8000` or to `http://localhost:8000/` to access the application.
+* Open your web browser and navigate to `http://127.0.0.1:8000` or `http://localhost:8000/` to access the application.
 
 ---
 
