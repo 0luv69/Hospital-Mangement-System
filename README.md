@@ -50,10 +50,10 @@ The Hospital Management System is a web application designed to manage hospital 
 * Run the following command:
 
 ```bash
-git clone <repository-url>
+git clone `https://github.com/0luv69/Hospital-Mangement-System.git`
 ```
 
-Replace `<repository-url>` with the actual URL of your GitHub repository.
+Replace `https://github.com/0luv69/Hospital-Mangement-System.git` with the actual URL of your GitHub repository.
 
 #### 2. Navigate to the Project Directory
 
