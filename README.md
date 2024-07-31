@@ -53,7 +53,7 @@ The Hospital Management System is a web application designed to manage hospital 
 git clone `https://github.com/0luv69/Hospital-Mangement-System.git`
 ```
 
-Replace `https://github.com/0luv69/Hospital-Mangement-System.git` with the actual URL of your GitHub repository.
+
 
 #### 2. Navigate to the Project Directory
 
